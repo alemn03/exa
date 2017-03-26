@@ -1,12 +1,60 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Autor:Carlos Alejandro Montero Navarro
+cedual:114910639
+Examen html-css
+css resposive pagina de impresion
+descripción: en este documento de encuetran todos los media querys necesarios para hacer que la aplicacion
+ajuste su contenido para impresion
+
 */
-/* 
-    Created on : 20/03/2017, 12:50:53 PM
-    Author     : ale
-    Descripción: Este archivo css cuenta con los estilos que van a tomar la pantalla a la
-                 hora de ser impreso el contenido.
-*/
-@import url('style.css');
+
+
+@media print {
+    /*basicamente de ajustan todos los valores de cada 
+    cantido de la pagina segun lo necesario para realizar una impresion*/
+    html{
+        text-align: center;
+    }
+    
+    .mainImage2{
+        display: none;
+    }
+    
+    h1{
+        width: 100%;
+    }
+    
+    nav{
+        width: 100%;
+        padding: 0%;
+    }
+    
+    li{
+    clear: both;
+    display: block ;
+
+}
+    
+    article{
+        width: 100%;
+    }
+    
+    
+    
+    aside{
+        width: 100%;
+    }
+    
+    p{
+        width: 80%;
+        text-align: justify;
+
+    }
+    
+    footer p{
+        text-align: center;
+    }
+    .contactfooter{
+        display: none;
+    }
+}

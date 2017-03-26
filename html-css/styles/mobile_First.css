@@ -1,0 +1,138 @@
+/*
+Autor:Carlos Alejandro Montero Navarro
+cedual:114910639
+Examen html-css
+css resposive para mobile first
+descripción: en este documento de encuetran todos los media querys necesarios para hacer la aplicación
+responsive incinado desde pantallas de baja densidad de pixeles.
+
+*/
+/* se importan los documentos css de style que es la base y print en caso de imprimer la pantalla*/
+@import url('style.css');
+@import url('print.css');
+
+/* se defienen los parametros base para la aplicacion mobile*/
+@media screen 
+and (min-device-width: 0px) {
+   /*tamaño del titulo*/
+    h1{
+        font-size: 2.0em;
+        text-align: center;
+    }
+    /*tamaño de la imagen principal secundaria*/
+    .mainImage2{
+        display: inline;
+        width: 75%;
+    }
+    
+   
+    /*se oculta la imagen princial*/
+    .mainImage{
+        display: none;
+    }
+    
+/*se difine la lista del nav en horizontal*/
+li{
+    clear: both;
+    display: block ;
+
+}
+
+
+/* se cambio el color de fondo al pasar el mouse */
+a:hover {
+    background-color: appworkspace;
+}
+
+/*con el section, el article y el aside a 100% se garantiza que cada una este en una fila deferente*/
+    section{
+        width: 100%;
+
+    }
+
+    article{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%
+
+    }
+    
+     /* se oculta el nav del footer*/
+     .contactfooter{
+        display: none;
+    }
+}
+
+@media screen 
+and (min-device-width: 767px) {
+    /* definicion de los valores del li para que se mueste en una sola linea */
+    li{
+    clear: both;
+    display: inline ;
+
+}
+/* se cambio el color de fondo al pasar el mouse */
+a:hover {
+    color: blue;
+    background-color: aquamarine;
+}
+/*se quita la imagen principal secundaria*/
+     .mainImage2{
+        display: none;
+    }
+    
+    /*se muestra la imagen principal */
+
+    .mainImage{
+        display: inline;
+    }
+   /*se da crean las 2 columnas con el articule y el aside*/
+     article{
+    width: 35%;
+    float: left;
+
+}
+
+aside{
+    width: 30%;
+    float: left;
+
+}
+
+/*se muestra el nav del footer*/
+.contactfooter{
+    display: inline;
+    
+}
+
+}
+
+@media screen 
+and (min-device-width: 979px) {
+   /*se ponen el h1 y la nav en una misma fila*/
+
+    h1{
+    width: 30%;
+    float: left;
+    font-size: 1.0em;
+
+}
+
+
+nav{
+    width: 30%;
+    float: left;
+    padding-left: 30%;
+}
+
+
+
+}
+
+
+
+
+
+

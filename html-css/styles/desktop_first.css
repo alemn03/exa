@@ -1,24 +1,27 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 20/03/2017, 12:52:29 PM
-    Author     : ale
-*/
+Autor:Carlos Alejandro Montero Navarro
+cedual:114910639
+Examen html-css
+css resposive para desktop first
+descripción: en este documento de encuetran todos los media querys necesarios para hacer la aplicación
+responsive incinado desde monitores de alta densidad de pixeles.
 
+*/
+/* se importan los documentos css de style que es la base y print en caso de imprimer la pantalla*/
 @import url('style.css');
+@import url('print.css');
 
-
+/* media query para patanlla 2k es la base del proyecto lo unico que hace es ocultar una imagen que
+se usa en resoluciones mas pequeñas*/
 @media screen 
-and (max-device-width: 1200px) {
+and (max-device-width: 2160px) {
     .mainImage2{
         display: none;
     }
 
 }
 
+/*en este media query se pasan de 3 columnas a 2 en el contenido*/
 @media screen 
 and (max-device-width: 979px) {
     section{
@@ -32,9 +35,14 @@ and (max-device-width: 979px) {
     }
 
 }
-
+/*aqui pasan las mayores transformaciones*/
 @media screen 
 and (max-device-width: 767px) {
+    /*texto a la derecha*/
+    html{
+        text-align: left;
+    }
+     /*h1 toda toda el tamaño logandro asi que el nav baje a la siguiente fila*/
     h1{
         width: 100%;
         float: left;
@@ -42,36 +50,21 @@ and (max-device-width: 767px) {
 
     }
     
-
+ /*la lista del nav pasa ser vertical*/
 li{
     clear: both;
     display: block ;
+    background-color: #c0c0c0;
 
 }
 
 
-a:link {
-    color: green;
-}
-
-/* link visitado */
-a:visited {
-    color: green;
-}
-
-/* mouse sobre link */
+/* se cambio el color de fondo al pasar el mouse */
 a:hover {
-    color: blue;
     background-color: appworkspace;
 }
 
-
-/* link seleccionado */
-a:active {
-    color: grey;
-}
-
-
+ /*section, article y aside al 100% para logar que cada uno se posicione en una fila diferente*/
     section{
         width: 100%;
 
@@ -80,31 +73,56 @@ a:active {
     article{
         width: 100%;
     }
+    /*se ajusta el boxmodel*/
+    .boxModel{
+        width: 50%;
+     
+    }
 
     aside{
         width: 100%
 
     }
+    /*se ajusta el tamaño de los parrafos*/
+    p{
+        width: 60%;
+    }
     
+    /*se ajustan las subimagenes*/
+    .subImages{
+        width: 75%;
+    }
+   
+    /*se oculta la lista de navegacion del footee*/
     .contactfooter{
         display: none;
     }
-
+    /*se ajusta el texto del footer*/
+    
+    footer p{
+        text-align: center;
+    }
+ 
 }
 
 @media screen 
 and (max-device-width: 480px) {
+   /*se ajusta al centro y se hace la letra mas grande del h1*/
+    h1{
+        font-size: 2.0em;
+        text-align: center;
+    }
     
+    /*se quita la imagen principal*/
     .mainImage{
         display:none;
     }
+    /*se pone la imagen princial secundaria*/
     .mainImage2{
         display: inline;
+        width: 75%;
     }
-    
-    .contactfooter{
-        display: none;
-    }
+
 
 }
 
