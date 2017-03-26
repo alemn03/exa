@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/03/2017, 12:52:29 PM
+    Author     : ale
+*/
+
+@import url('style.css');
+
+
+@media screen 
+and (max-device-width: 1200px) {
+    .mainImage2{
+        display: none;
+    }
+
+}
+
+@media screen 
+and (max-device-width: 979px) {
+    section{
+        width: 100%;
+
+    }
+
+    aside{
+        width: 100%
+
+    }
+
+}
+
+@media screen 
+and (max-device-width: 767px) {
+    h1{
+        width: 100%;
+        float: left;
+        font-size: 1.0em;
+
+    }
+    
+
+li{
+    clear: both;
+    display: block ;
+
+}
+
+
+a:link {
+    color: green;
+}
+
+/* link visitado */
+a:visited {
+    color: green;
+}
+
+/* mouse sobre link */
+a:hover {
+    color: blue;
+    background-color: appworkspace;
+}
+
+
+/* link seleccionado */
+a:active {
+    color: grey;
+}
+
+
+    section{
+        width: 100%;
+
+    }
+
+    article{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%
+
+    }
+    
+    .contactfooter{
+        display: none;
+    }
+
+}
+
+@media screen 
+and (max-device-width: 480px) {
+    
+    .mainImage{
+        display:none;
+    }
+    .mainImage2{
+        display: inline;
+    }
+    
+    .contactfooter{
+        display: none;
+    }
+
+}
+

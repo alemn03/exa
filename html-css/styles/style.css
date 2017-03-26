@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/03/2017, 12:52:58 PM
+    Author     : ale
+*/
+
+html{
+    width: 1200px;
+    height: 720px;
+    padding: 2%;
+    font-family: Times New Roman, sans-serif;
+    text-align: center;
+
+
+}
+
+#container{
+    height: 30%;
+}
+
+h1{
+    width: 30%;
+    float: left;
+    font-size: 1.0em;
+    color: blue;
+
+}
+
+h2{
+    color: #5262fe;
+}
+
+
+nav{
+    width: 30%;
+    float: left;
+    padding-left: 30%;
+}
+
+li{
+    display: inline;
+    padding: 3%;
+
+}
+
+a:link {
+    color: green;
+}
+
+/* link visitado */
+a:visited {
+    color: green;
+}
+
+/* mouse sobre link */
+a:hover {
+    color: blue;
+    background-color: aquamarine;
+}
+
+/* link seleccionado */
+a:active {
+    color: grey;
+}
+
+
+.mainImage{
+    width: 91.666666667%;
+    height: 47.222222222%;
+
+}
+
+.subImages{
+    width: 50%;
+    height: 50%;
+}
+
+
+article{
+    width: 35%;
+    float: left;
+
+}
+
+aside{
+    width: 30%;
+    float: left;
+
+}
+
+.boxModel{
+    background-color: gray;
+    width: 80%;
+    border: 2px solid black;
+    padding: 5%;
+    margin: 5%;
+
+}
+footer {
+
+    margin-top: -150px; /* negative value of footer height */
+    clear:both;
+    border-top: 2px solid;
+    height: 20%;
+} 
