@@ -118,7 +118,7 @@ aside{
 
 /* definicion de los valores del sticky footer */
 footer {
-     padding-right: 10%;
+   padding-right: 10%;
     background-color: #bed7c8;
     position: fixed;
     bottom: 0%;
@@ -126,3 +126,7 @@ footer {
     right: 0%;
   
 } 
+
+footer p{
+    text-align: center;
+}
